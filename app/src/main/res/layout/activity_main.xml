@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numberToSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@android:string/emptyPhoneNumber"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:text="@string/_62"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <ImageButton
+        android:id="@+id/callButton"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:background="@drawable/phone"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberToSend"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <ImageButton
+        android:id="@+id/smsButton"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:background="@drawable/sms"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/callButton"
+        app:layout_constraintTop_toBottomOf="@+id/numberToSend"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <EditText
+        android:id="@+id/websiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/personalwebsite"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/https_apapedulimu_click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callButton"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageButton
+        android:id="@+id/websiteButton"
+        android:layout_width="83dp"
+        android:layout_height="82dp"
+        android:background="@drawable/chrome"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/websiteText"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <EditText
+        android:id="@+id/textText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/tempatmu"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/stmik_yadika_bangil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/websiteButton" />
+
+    <ImageButton
+        android:id="@+id/emailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textText"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ImageButton
+        android:id="@+id/mapsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/maps"
+        app:layout_constraintEnd_toStartOf="@+id/calenderButton"
+        app:layout_constraintStart_toEndOf="@+id/emailButton"
+        app:layout_constraintTop_toBottomOf="@+id/textText"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <ImageButton
+        android:id="@+id/calenderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/calender"
+        app:layout_constraintStart_toEndOf="@+id/emailButton"
+        app:layout_constraintTop_toBottomOf="@+id/textText"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <ImageButton
+        android:id="@+id/infoButton"
+        android:onClick="info"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="75dp"
+        android:background="@drawable/aboutme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calenderButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/emailButton"
+        app:layout_constraintTop_toTopOf="@+id/mapsButton"
+        app:layout_constraintVertical_bias="0.083" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

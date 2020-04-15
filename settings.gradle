@@ -1,0 +1,2 @@
+rootProject.name='SerbaGuna'
+include ':app'
